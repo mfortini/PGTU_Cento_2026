@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "layers": [
+    {
+      "id": "tav_02bis_A_territorio_comunale",
+      "title": "tav 02bis A territorio comunale",
+      "section": "tavole",
+      "previewUrl": "editor/previews/tav_02bis_A_territorio_comunale.jpg",
+      "imageSize": [
+        1826,
+        3341
+      ],
+      "sourceTif": "raster/tavole/tav_02bis_A_territorio_comunale.tif"
+    },
+    {
+      "id": "tav_02bis_B_area_centrale",
+      "title": "tav 02bis B area centrale",
+      "section": "tavole",
+      "previewUrl": "editor/previews/tav_02bis_B_area_centrale.jpg",
+      "imageSize": [
+        1624,
+        3341
+      ],
+      "sourceTif": "raster/tavole/tav_02bis_B_area_centrale.tif"
+    },
+    {
+      "id": "tav_01_Classificazione",
+      "title": "Tav. 01 — Classificazione",
+      "section": "tavole",
+      "previewUrl": "editor/previews/tav_01_Classificazione.jpg",
+      "imageSize": [
+        4967,
+        3508
+      ],
+      "sourceTif": "raster/tavole/tav_01_Classificazione.tif"
+    },
+    {
+      "id": "tav_02_Rete_ciclabile_portante",
+      "title": "Tav. 02 — Rete ciclabile portante",
+      "section": "tavole",
+      "previewUrl": "editor/previews/tav_02_Rete_ciclabile_portante.jpg",
+      "imageSize": [
+        4967,
+        3508
+      ],
+      "sourceTif": "raster/tavole/tav_02_Rete_ciclabile_portante.tif"
+    },
+    {
+      "id": "tav_03_Circolazione_nell_area_centrale",
+      "title": "Tav. 03 — Circolazione area centrale",
+      "section": "tavole",
+      "previewUrl": "editor/previews/tav_03_Circolazione_nell_area_centrale.jpg",
+      "imageSize": [
+        4967,
+        3508
+      ],
+      "sourceTif": "raster/tavole/tav_03_Circolazione_nell_area_centrale.tif"
+    }
+  ]
+}

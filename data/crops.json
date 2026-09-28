@@ -1,0 +1,119 @@
+{
+  "version": 1,
+  "layers": {
+    "tav_01_Classificazione": {
+      "sourceTif": "raster/tavole/tav_01_Classificazione.tif",
+      "imageSize": [
+        4967,
+        3508
+      ],
+      "content": {
+        "x": 0.01825,
+        "y": 0.022669607516938604,
+        "w": 0.713,
+        "h": 0.9534808619676437
+      },
+      "legend": {
+        "x": 0.74,
+        "y": 0.027079646017699115,
+        "w": 0.11208328247070312,
+        "h": 0.1803244747735758
+      },
+      "updatedAt": "2026-09-28T17:34:13.129Z"
+    },
+    "tav_02_Rete_ciclabile_portante": {
+      "sourceTif": "raster/tavole/tav_02_Rete_ciclabile_portante.tif",
+      "imageSize": [
+        4967,
+        3508
+      ],
+      "content": {
+        "x": 0.01825,
+        "y": 0.023849557522123893,
+        "w": 0.713,
+        "h": 0.9511209079438605
+      },
+      "legend": {
+        "x": 0.7433333587646485,
+        "y": 0.023539823008849558,
+        "w": 0.08541664123535156,
+        "h": 0.18445425928166484
+      },
+      "updatedAt": "2026-09-28T17:33:33.010Z"
+    },
+    "tav_03_Circolazione_nell_area_centrale": {
+      "sourceTif": "raster/tavole/tav_03_Circolazione_nell_area_centrale.tif",
+      "imageSize": [
+        4967,
+        3508
+      ],
+      "content": {
+        "x": 0.01741667938232422,
+        "y": 0.025029480520602877,
+        "w": 0.7109166412353516,
+        "h": 0.9534807539408185
+      },
+      "legend": {
+        "x": 0.74,
+        "y": 0.02825962302959071,
+        "w": 0.09208335876464843,
+        "h": 0.3077580760854536
+      },
+      "updatedAt": "2026-09-28T17:34:11.220Z"
+    },
+    "tav_02bis_A_territorio_comunale": {
+      "sourceTif": "raster/tavole/tav_02bis_A_territorio_comunale.tif",
+      "legendSourceTif": "raster/sources/tav_02bis_Rete_ciclabile_tipologie_realizzative.tif",
+      "legendSourceRect": {
+        "x": 0.74,
+        "y": 0.02471974600732854,
+        "w": 0.12208335876464843,
+        "h": 0.17678465176472624
+      },
+      "imageSize": [
+        1970,
+        3519
+      ],
+      "content": {
+        "x": 0,
+        "y": 0,
+        "w": 1,
+        "h": 1
+      },
+      "legend": {
+        "x": 0.74,
+        "y": 0.02471974600732854,
+        "w": 0.12208335876464843,
+        "h": 0.17678465176472624
+      },
+      "updatedAt": "2026-09-28T17:33:55.047Z"
+    },
+    "tav_02bis_B_area_centrale": {
+      "sourceTif": "raster/tavole/tav_02bis_B_area_centrale.tif",
+      "legendSourceTif": "raster/sources/tav_02bis_Rete_ciclabile_tipologie_realizzative.tif",
+      "legendSourceRect": {
+        "x": 0.74,
+        "y": 0.02471974600732854,
+        "w": 0.12208335876464843,
+        "h": 0.17678465176472624
+      },
+      "imageSize": [
+        1757,
+        3513
+      ],
+      "content": {
+        "x": 0,
+        "y": 0,
+        "w": 1,
+        "h": 1
+      },
+      "legend": {
+        "x": 0.74,
+        "y": 0.02471974600732854,
+        "w": 0.12208335876464843,
+        "h": 0.17678465176472624
+      },
+      "updatedAt": "2026-09-28T17:33:55.047Z"
+    }
+  }
+}

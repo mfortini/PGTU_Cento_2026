@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PGTU — Cento</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="header">
+    <div>
+      <h1 id="map-title">PGTU — Cento</h1>
+      <p id="map-desc" class="subtitle">Scegli una tavola con il pulsante <strong>Tavole</strong> in alto a destra sulla mappa.</p>
+    </div>
+    <div class="header-actions">
+      <label class="basemap-control">
+        Sfondo mappa
+        <select id="basemap-select" class="basemap-select" aria-label="Sfondo mappa"></select>
+      </label>
+      <label class="confine-toggle">
+        <input type="checkbox" id="confine-toggle" checked />
+        <span>Confine comunale</span>
+      </label>
+      <label class="opacity-control">
+        Opacità overlay
+        <input type="range" id="opacity" min="0" max="1" step="0.05" value="0.85" />
+        <span id="opacity-value" class="opacity-value">85%</span>
+      </label>
+    </div>
+  </header>
+
+  <main class="map-layout">
+    <aside id="legend-panel" class="legend-panel" hidden>
+      <div class="legend-panel-header">
+        <div class="legend-panel-heading">
+          <h2 class="legend-panel-title">Legenda</h2>
+          <span id="legend-layer-name" class="legend-layer-name"></span>
+        </div>
+        <div class="legend-zoom-toolbar" aria-label="Zoom legenda">
+          <button type="button" id="legend-zoom-out" class="legend-zoom-btn" title="Riduci">−</button>
+          <span id="legend-zoom-level" class="legend-zoom-level">100%</span>
+          <button type="button" id="legend-zoom-in" class="legend-zoom-btn" title="Ingrandisci">+</button>
+          <button type="button" id="legend-zoom-reset" class="legend-zoom-btn legend-zoom-reset" title="Adatta alla finestra">Adatta</button>
+        </div>
+      </div>
+      <div class="legend-panel-body">
+        <div id="legend-viewport" class="legend-viewport">
+          <div id="legend-transform" class="legend-transform">
+            <img id="legend-image" class="legend-image" alt="" draggable="false" />
+          </div>
+        </div>
+        <p id="legend-empty" class="legend-empty" hidden>Legenda non disponibile per questa tavola.</p>
+      </div>
+    </aside>
+    <div class="map-stage">
+      <div id="map"></div>
+      <button
+        type="button"
+        id="layer-panel-toggle"
+        class="layer-panel-fab"
+        aria-expanded="false"
+        aria-label="Apri elenco tavole del PGTU"
+        title="Apri elenco tavole"
+      >
+        <span class="layer-panel-fab-icon" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+            <polyline points="2 17 12 22 22 17"></polyline>
+            <polyline points="2 12 12 17 22 12"></polyline>
+          </svg>
+        </span>
+        <span class="layer-panel-fab-label">Tavole</span>
+      </button>
+      <div id="layer-hint" class="layer-hint" role="status" aria-live="polite">
+        <span class="layer-hint-text">Scegli una tavola del PGTU</span>
+        <span class="layer-hint-arrow" aria-hidden="true">↗</span>
+      </div>
+    </div>
+    <aside id="layer-panel" class="layer-panel">
+      <div id="layer-panel-body" class="layer-panel-body" hidden>
+        <div class="layer-panel-header">
+          <h2 class="layer-panel-title">Tavole PGTU</h2>
+          <button
+            type="button"
+            id="layer-panel-close"
+            class="layer-panel-close"
+            aria-label="Chiudi pannello layer"
+          >
+            ×
+          </button>
+        </div>
+        <div class="layer-help">
+          <p><strong>Come usare la mappa</strong></p>
+          <ul>
+            <li>Scegli una tavola dall'elenco (classificazione, rete ciclabile, circolazione).</li>
+            <li>Regola l'opacità con lo slider in alto a destra.</li>
+            <li>Attiva o disattiva il confine comunale dall'header.</li>
+          </ul>
+        </div>
+        <div id="layer-radio-form" class="layer-radio-form"></div>
+      </div>
+    </aside>
+  </main>
+
+  <footer class="footer">
+    <p class="footer-disclaimer">
+      Questo sito è una rielaborazione delle tavole del PGTU di Cento
+      (adozione DGC 125 del 17/09/2026). Per ogni dubbio consultare sempre i documenti ufficiali.
+    </p>
+    <span id="coords" class="footer-coords"></span>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+  <script src="js/map.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<PAMDataset>
+  <SRS dataAxisToSRSAxisMapping="1,2">PROJCS["WGS 84 / UTM zone 32N",GEOGCS["WGS 84",DATUM["WGS_1984",SPHEROID["WGS 84",6378137,298.257223563,AUTHORITY["EPSG","7030"]],AUTHORITY["EPSG","6326"]],PRIMEM["Greenwich",0,AUTHORITY["EPSG","8901"]],UNIT["degree",0.0174532925199433,AUTHORITY["EPSG","9122"]],AUTHORITY["EPSG","4326"]],PROJECTION["Transverse_Mercator"],PARAMETER["latitude_of_origin",0],PARAMETER["central_meridian",9],PARAMETER["scale_factor",0.9996],PARAMETER["false_easting",500000],PARAMETER["false_northing",0],UNIT["metre",1,AUTHORITY["EPSG","9001"]],AXIS["Easting",EAST],AXIS["Northing",NORTH],AUTHORITY["EPSG","32632"]]</SRS>
+  <GeoTransform>  6.8067584341688477e+05,  1.0512850744807656e+00,  0.0000000000000000e+00,  4.9557664980466925e+06,  0.0000000000000000e+00, -1.0515770108340128e+00</GeoTransform>
+  <Metadata>
+    <MDI key="AREA_OR_POINT">Area</MDI>
+    <MDI key="AUTHOR">Bianca Bozzi</MDI>
+    <MDI key="CREATION_DATE">D:20240119115238+1'0'</MDI>
+    <MDI key="CREATOR">QGIS 3.40.12-Bratislava</MDI>
+    <MDI key="DPI">150</MDI>
+    <MDI key="NEATLINE">POLYGON ((680675.843416885 4955766.55449715,680675.843416885 4954578.21602445,682357.843091218 4954578.21602445,682357.843091218 4955766.55449715,680675.843416885 4955766.55449715))</MDI>
+    <MDI key="PRODUCER">QGIS 3.40.12-Bratislava</MDI>
+  </Metadata>
+  <Metadata domain="IMAGE_STRUCTURE">
+    <MDI key="SOURCE_COLOR_SPACE">YCbCr</MDI>
+    <MDI key="INTERLEAVE">PIXEL</MDI>
+    <MDI key="COMPRESSION">JPEG</MDI>
+  </Metadata>
+  <Metadata domain="xml:XMP" format="xml">
+    <?xpacket begin=""?>
+    <x:xmpmeta xmlns:x="adobe:ns:meta/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:pdf="http://ns.adobe.com/pdf/1.3/" xmlns:pdfaid="http://www.aiim.org/pdfa/ns/id/">
+      <rdf:RDF>
+        <rdf:Description rdf:about="">
+          <dc:title>
+            <rdf:Alt>
+              <rdf:li xml:lang="x-default">tav</rdf:li>
+            </rdf:Alt>
+          </dc:title>
+          <dc:creator>
+            <rdf:Seq>
+              <rdf:li>Bianca Bozzi</rdf:li>
+            </rdf:Seq>
+          </dc:creator>
+        </rdf:Description>
+        <rdf:Description rdf:about="" pdf:Producer="QGIS 3.40.12-Bratislava" pdf:Trapped="False" />
+        <rdf:Description rdf:about="" xmp:CreatorTool="QGIS 3.40.12-Bratislava" xmp:CreateDate="2024-01-19T11:52:38+01:00" xmp:ModifyDate="2024-01-19T11:52:38+01:00" xmp:MetadataDate="2024-01-19T11:52:38+01:00" />
+        <rdf:Description rdf:about="" xmpMM:DocumentID="uuid:b67fe6ca-d374-4f60-be52-47f081d9376d" xmpMM:VersionID="1" xmpMM:RenditionClass="default" />
+      </rdf:RDF>
+    </x:xmpmeta>
+    <?xpacket end="w"?>
+  </Metadata>
+  <PAMRasterBand band="1">
+    <Metadata domain="IMAGE_STRUCTURE">
+      <MDI key="COMPRESSION">JPEG</MDI>
+    </Metadata>
+  </PAMRasterBand>
+  <PAMRasterBand band="2">
+    <Metadata domain="IMAGE_STRUCTURE">
+      <MDI key="COMPRESSION">JPEG</MDI>
+    </Metadata>
+  </PAMRasterBand>
+  <PAMRasterBand band="3">
+    <Metadata domain="IMAGE_STRUCTURE">
+      <MDI key="COMPRESSION">JPEG</MDI>
+    </Metadata>
+  </PAMRasterBand>
+</PAMDataset>

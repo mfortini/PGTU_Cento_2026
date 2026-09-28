@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Editor ritaglio — PGTU Cento</title>
+  <link rel="stylesheet" href="css/crop-editor.css" />
+</head>
+<body>
+  <header class="editor-header">
+    <div>
+      <h1>Editor ritaglio tavole</h1>
+      <p class="subtitle">Definisci riquadro <strong>contenuto</strong> (carta) e <strong>legenda</strong> per ogni GeoTIFF.</p>
+    </div>
+    <div class="header-actions">
+      <span id="progress-label" class="progress-label">0/0 completi</span>
+      <button type="button" id="btn-save-server" class="btn primary">Salva su server</button>
+      <button type="button" id="btn-export" class="btn">Esporta JSON</button>
+      <label class="btn file-btn">
+        Importa JSON
+        <input type="file" id="import-file" accept="application/json,.json" hidden />
+      </label>
+    </div>
+  </header>
+
+  <div class="editor-layout">
+    <aside class="sidebar" id="layer-sidebar"></aside>
+
+    <main class="workspace">
+      <div class="toolbar">
+        <div class="mode-group" role="group" aria-label="Modalità riquadro">
+          <button type="button" class="mode-btn active" data-mode="content">Contenuto</button>
+          <button type="button" class="mode-btn" data-mode="legend">Legenda</button>
+        </div>
+        <button type="button" id="btn-save-layer" class="btn primary">Salva layer</button>
+        <button type="button" id="btn-next" class="btn">Layer successivo</button>
+        <span id="current-layer-title" class="current-title"></span>
+      </div>
+
+      <div class="canvas-wrap" id="canvas-wrap">
+        <p class="placeholder">Seleziona un layer dalla lista.</p>
+      </div>
+
+      <p class="hint">
+        Trascina i riquadri per spostarli; usa l’angolo in basso a destra per ridimensionare.
+        Entrambi i riquadri sono obbligatori per considerare il layer completo.
+      </p>
+    </main>
+  </div>
+
+  <script src="js/crop-editor.js"></script>
+</body>
+</html>
