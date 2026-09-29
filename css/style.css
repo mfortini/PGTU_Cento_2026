@@ -325,17 +325,29 @@ h1 {
     grid-row: 2;
   }
 
+  /* Pannello tavole: foglio inferiore a tutta larghezza (non colonna stretta) */
   .map-layout--layers-open {
-    grid-template-columns: 1fr minmax(180px, 42vw);
+    grid-template-columns: 1fr;
   }
 
   .map-layout--layers-open .layer-panel {
-    grid-column: 2;
-    grid-row: 1;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1100;
+    grid-column: auto;
+    grid-row: auto;
+    width: 100%;
+    max-height: min(70vh, 520px);
+    border-left: none;
+    border-top: 1px solid #334155;
+    border-radius: 12px 12px 0 0;
+    box-shadow: 0 -8px 32px rgba(0, 0, 0, 0.45);
   }
 
   .map-layout--with-legend.map-layout--layers-open {
-    grid-template-columns: 1fr minmax(180px, 42vw);
+    grid-template-columns: 1fr;
     grid-template-rows: minmax(120px, 33vh) 1fr;
   }
 
@@ -350,8 +362,8 @@ h1 {
   }
 
   .map-layout--with-legend.map-layout--layers-open .layer-panel {
-    grid-column: 2;
-    grid-row: 1 / -1;
+    grid-column: auto;
+    grid-row: auto;
   }
 
   .legend-panel {
@@ -367,7 +379,16 @@ h1 {
   }
 
   .layer-panel-body {
-    max-height: min(45vh, 360px);
+    max-height: none;
+  }
+
+  /* Su mobile la guida occupa troppo spazio: priorità all'elenco tavole */
+  .layer-help {
+    display: none;
+  }
+
+  .layer-tree-items {
+    max-height: none;
   }
 
   .layer-hint {
